@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Registration Form Validation</title>
+</head>
+
+<body>
+
+    <form method="post" action="success.html" name="ContactForm" onsubmit="return ValidateContactForm();">
+
+        <p><b>
+                Registration Form Validation
+            </b></p>
+        <p> User Name: <br>
+            <input type="text" size="50" name="Name">
+        </p>
+        <p>Password:<br>
+            <input type="password" size="50" pass="Password">
+        <p>Country:<br></p>
+        <select id="Country">
+            <option value="Select">Select</option>
+            <option value="1">Bangladesh</option>
+            <option value="2">India</option>
+            <option value="3">USA</option>
+            <option value="4">Canada</option>
+        </select>
+        <p>City:<br></p>
+        <select id="City">
+            <option value="Select">Select</option>
+            <option value="1">NewYork</option>
+            <option value="2">Delhi</option>
+            <option value="3">Dhaka</option>
+            <option value="4">toronto</option>
+        </select><br><br>
+
+        <label for="address">Address:<br></label>
+        <input type="address" size="50" id="address" name="address"><br>
+
+        <p>phone:<br>
+            <input type="text" size="50" name="phone"><br>
+
+        </p>
+        <input id="checkbox" type="checkbox" />
+        <label for="checkbox"> I agree to the terms and Conditions</label><br><br>
+
+        <button onclick=" ValidateContactForm()">Submit</button>
+
+    </form>
+
+    <script src="./javaScript.js"></script>
+</body>
+
+</html>
